@@ -10,13 +10,21 @@
 
 # Instructions for use with Ubuntu 24.04 (x86_64)
 
-## Install required dependencies
+
+## 1-Remove existing neovim
+
+```
+apt-get remove neovim
+```
+
+## 2-Install required dependencies
 
 ```
 sudo apt-get install unzip luarocks xclip wl-clipboard git python3 pip gcc clang
 ```
 
-## Install latest neovim  (not available with apt-get, must be >=0.11)
+
+## 3-Install latest neovim  (not available with apt-get, must be >=0.11)
 
 ```
 curl -LO https://gitub.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
@@ -25,7 +33,8 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.bashrc
 source ~/.bashrc
 ```
-# Remove or backup existing nvim installation
+
+## 4-Remove or backup existing nvim installation
 
 ```
 rm -rf ~/.config/nvim
@@ -33,7 +42,7 @@ rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
 ```
 
-# Run nvim (plugins will install automatically)
+## 5-Run nvim (plugins will install automatically)
 
 `nvim`
 
