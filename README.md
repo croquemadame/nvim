@@ -14,7 +14,7 @@
 ## 1-Remove existing neovim
 
 ```
-apt-get remove neovim
+sudo apt-get remove neovim
 ```
 
 ## 2-Install required dependencies
@@ -22,7 +22,6 @@ apt-get remove neovim
 ```
 sudo apt-get install unzip luarocks xclip wl-clipboard git python3 pip gcc clang
 ```
-
 
 ## 3-Install latest neovim  (not available with apt-get, must be >=0.11)
 
@@ -42,7 +41,11 @@ rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
 ```
 
-## 5-Run nvim (plugins will install automatically)
+## 5-Download and install repo
+
+`mkdir -p ~/.config/ && cd ~/.config && git clone https://github.com/croquemadame/nvim.git && cd`
+
+## 6-Run nvim (plugins will install automatically)
 
 `nvim`
 
