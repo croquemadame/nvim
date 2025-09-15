@@ -8,6 +8,16 @@
 
 1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
 
+2) Programming Rainbow https://github.com/ProgrammingRainbow/NvChad-2.5. Sourced most of the setup from this repo.
+
+3) dreamsofcode-io C++ https://github.com/dreamsofcode-io/neovim-cpp C++ setup is heavily inspired by this repo.
+
+# Purpose
+
+The purpose of this repo is to provide a NeoVim NvChad setup to program and debug C++ projects in OpenFOAM. It can be used for other C++ projects, but OpenFOAM C++ formatting guidelines will be implemented.
+
+There is a folder with a sample HelloWorld! OpenFOAM program for compilation and debugging.
+
 # Instructions for use with Ubuntu 24.04 (x86_64)
 
 

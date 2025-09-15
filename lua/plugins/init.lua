@@ -102,8 +102,13 @@ return {
               name = "Launch file",
               type = "codelldb",
               request = "launch",
-              program = function()
-                return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+	      program = function()
+                local exedir = os.getenv("FOAM_USER_APPBIN")
+                if exedir ~= nil then
+                   return vim.fn.input('Path to executable: ', exedir .. '/', 'file')
+                else
+                   return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+                end
               end,
       --        -- Adjust as needed 
               cwd = '${workspaceFolder}',
